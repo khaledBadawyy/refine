@@ -1,0 +1,1448 @@
+
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="K96CIXHJWU0fcf9hu0pPV0dQVx5FjXb0LaQ6fK48">
+
+    <title>refine</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="/css/adminltev3.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/select/1.3.0/css/select.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+                <link href="/css/custom-rtl.css" rel="stylesheet" />
+             
+
+    </head>
+
+<body class="sidebar-mini layout-fixed" style="height: auto;">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+                            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            AR
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="https://dev.refine-care.com/admin/lab-branches/create?change_language=ar">AR (Arabic)</a>
+                                                            <a class="dropdown-item" href="https://dev.refine-care.com/admin/lab-branches/create?change_language=en">EN (English)</a>
+                                                    </div>
+                    </li>
+                </ul>
+            
+        </nav>
+
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="min-height: 917px;">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+        <span class="brand-text font-weight-light">refine</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="https://dev.refine-care.com/admin">
+                        <i class="fas fa-fw fa-tachometer-alt nav-icon">
+                        </i>
+                        <p>
+                            الرئيسية
+                        </p>
+                    </a>
+                </li>
+                                    <li
+                        class="nav-item has-treeview    ">
+                        <a class="nav-link nav-dropdown-toggle    "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-users">
+
+                            </i>
+                            <p>
+                                إدارة المستخدمين
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/permissions"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-unlock-alt">
+
+                                        </i>
+                                        <p>
+                                            الصلاحيات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/roles"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-briefcase">
+
+                                        </i>
+                                        <p>
+                                            المجموعات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/users"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-user">
+
+                                        </i>
+                                        <p>
+                                            المستخدمين
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/audit-logs"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-file-alt">
+
+                                        </i>
+                                        <p>
+                                            السجلات
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview  ">
+                        <a class="nav-link nav-dropdown-toggle  "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-edit">
+
+                            </i>
+                            <p>
+                                اداره المحتوي
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/blog-categories"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-th">
+
+                                        </i>
+                                        <p>
+                                            قسم المدونه
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/blogs"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fab fa-blogger">
+
+                                        </i>
+                                        <p>
+                                            المدونه
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview    ">
+                        <a class="nav-link nav-dropdown-toggle"
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-cogs">
+
+                            </i>
+                            <p>
+                                اداره المنصه
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/app-settings"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-cog">
+
+                                        </i>
+                                        <p>
+                                            الاعدادات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/carousels"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-sliders-h">
+
+                                        </i>
+                                        <p>
+                                            اداره
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/partners"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-hands-helping">
+
+                                        </i>
+                                        <p>
+                                            الشركاء
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/customer-messages"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-user-friends">
+
+                                        </i>
+                                        <p>
+                                            رسائل العملاء
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview   ">
+                        <a class="nav-link nav-dropdown-toggle   "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-map-pin">
+
+                            </i>
+                            <p>
+                                الاماكن
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/countries"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-flag">
+
+                                        </i>
+                                        <p>
+                                            البلاد
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/cities"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-map-marker-alt">
+
+                                        </i>
+                                        <p>
+                                            المدن
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/areas"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-map-marked-alt">
+
+                                        </i>
+                                        <p>
+                                            المناطق
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview  menu-open   ">
+                        <a class="nav-link nav-dropdown-toggle  active   "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-building">
+
+                            </i>
+                            <p>
+                                اداره الخدمات
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/labs"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-flask">
+
+                                        </i>
+                                        <p>
+                                            المعامل
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/lab-branches"
+                                        class="nav-link active">
+                                        <i class="fa-fw nav-icon fas fa-code-branch">
+
+                                        </i>
+                                        <p>
+                                            فروع المعامل
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/lab-item-catgeories"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-th-list">
+
+                                        </i>
+                                        <p>
+                                            اقسام مكونات المعمل
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/lab-items"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-vials">
+
+                                        </i>
+                                        <p>
+                                            منتجات المعمل
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/lab-item-prices"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-coins">
+
+                                        </i>
+                                        <p>
+                                            اسعار منتجات المعمل
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview    ">
+                        <a class="nav-link nav-dropdown-toggle    "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-users">
+
+                            </i>
+                            <p>
+                                اداره العملاء
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/customers"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-user-alt">
+
+                                        </i>
+                                        <p>
+                                            العميل
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/wallets"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-wallet">
+
+                                        </i>
+                                        <p>
+                                            المحفظه
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/baskets"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            سلة
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/fcm-tokens"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fab fa-pushed">
+
+                                        </i>
+                                        <p>
+                                            رمز Fcm
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview   ">
+                        <a class="nav-link nav-dropdown-toggle   "
+                            href="#">
+                            <i class="fa-fw nav-icon fab fa-first-order">
+
+                            </i>
+                            <p>
+                                اداره الطلبات
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/orders"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fab fa-first-order">
+
+                                        </i>
+                                        <p>
+                                            طلبات العملاء
+                                        </p>
+                                    </a>
+                                </li>
+                                                        
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/order-lab-refunds"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-retweet">
+
+                                        </i>
+                                        <p>
+                                            طلب استرداد المعمل
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/instapay-transactions"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-retweet">
+
+                                        </i>
+                                        <p>
+                                            عمليات انستاباي
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview    ">
+                        <a class="nav-link nav-dropdown-toggle    "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-list">
+
+                            </i>
+                            <p>
+                                اداره المهمات
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/task-statuses"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-server">
+
+                                        </i>
+                                        <p>
+                                            الحالات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/task-tags"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-server">
+
+                                        </i>
+                                        <p>
+                                            العلامات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/tasks"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-briefcase">
+
+                                        </i>
+                                        <p>
+                                            المهمات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/tasks-calendars"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-calendar">
+
+                                        </i>
+                                        <p>
+                                            تقويم
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview     ">
+                        <a class="nav-link nav-dropdown-toggle     "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-money-bill">
+
+                            </i>
+                            <p>
+                                المصاريف
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/expense-categories"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-list">
+
+                                        </i>
+                                        <p>
+                                            تصنيف النفقات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/income-categories"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-list">
+
+                                        </i>
+                                        <p>
+                                            تصنيفات الإيراد
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/expenses"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-arrow-circle-right">
+
+                                        </i>
+                                        <p>
+                                            المصروفات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/incomes"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-arrow-circle-right">
+
+                                        </i>
+                                        <p>
+                                            الإيرادات
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/expense-reports"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-chart-line">
+
+                                        </i>
+                                        <p>
+                                            تقرير شهري
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                                    <li
+                        class="nav-item has-treeview  ">
+                        <a class="nav-link nav-dropdown-toggle  "
+                            href="#">
+                            <i class="fa-fw nav-icon fas fa-question">
+
+                            </i>
+                            <p>
+                                اداره التعليمات
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/faq-categories"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-briefcase">
+
+                                        </i>
+                                        <p>
+                                            الاقسام
+                                        </p>
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/faq-questions"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon fas fa-question">
+
+                                        </i>
+                                        <p>
+                                            الاسئله
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                
+                                    <li class="nav-item has-treeview ">
+                        <a class="nav-link nav-dropdown-toggle "
+                            href="#">
+                            <i class="fa-fw nav-icon fab fa-amazon-pay">
+
+                            </i>
+                            <p>
+                                اداره الدفع
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                                                            <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/gateway-methods"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon far fa-credit-card">
+
+                                        </i>
+                                        <p>
+                                            Gateway Methods
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="https://dev.refine-care.com/admin/gateway-methods/pay"
+                                        class="nav-link ">
+                                        <i class="fa-fw nav-icon far fa-credit-card">
+
+                                        </i>
+                                        <p>
+                                            الدفع
+                                        </p>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                
+                <li class="nav-item">
+                    <a href="https://dev.refine-care.com/admin/system-calendar"
+                        class="nav-link ">
+                        <i class="fas fa-fw fa-calendar nav-icon">
+
+                        </i>
+                        <p>
+                            التقويم
+                        </p>
+                    </a>
+                </li>
+                                                            <li class="nav-item">
+                            <a class="nav-link "
+                                href="https://dev.refine-care.com/profile/password">
+                                <i class="fa-fw fas fa-key nav-icon">
+                                </i>
+                                <p>
+                                    تغيير كلمة المرور
+                                </p>
+                            </a>
+                        </li>
+                                                    <li class="nav-item">
+                    <a href="#" class="nav-link"
+                        onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
+                        <p>
+                            <i class="fas fa-fw fa-sign-out-alt nav-icon">
+
+                            </i>
+                            <p>تسجيل خروج</p>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+        <div class="content-wrapper" style="min-height: 917px;">
+            <!-- Main content -->
+            <section class="content" style="padding-top: 20px">
+                                                
+<div class="card">
+    <div class="card-header">
+        إضافة فرع معمل 
+    </div>
+
+    <div class="card-body">
+        <form method="POST" action="https://dev.refine-care.com/admin/lab-branches" enctype="multipart/form-data">
+            <input type="hidden" name="_token" value="K96CIXHJWU0fcf9hu0pPV0dQVx5FjXb0LaQ6fK48" autocomplete="off">            <div class="form-group">
+                <label class="required" for="business_name_ar">الاسم التجاري بالعربي</label>
+                <input class="form-control " type="text" name="business_name_ar" id="business_name_ar" value="" required>
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label class="required" for="business_name_en">الاسم التجاري بالانجليزي</label>
+                <input class="form-control " type="text" name="business_name_en" id="business_name_en" value="" required>
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label class="required" for="lab_id">معمل</label>
+                <select class="form-control select2 " name="lab_id" id="lab_id" required>
+                                            <option value="" selected>الرجاء الإختيار</option>
+                                            <option value="1" >معمل الجبالي</option>
+                                            <option value="2" >معمل صحتي</option>
+                                            <option value="3" >معمل ألفا</option>
+                                            <option value="4" >معمل المختبر</option>
+                                            <option value="7" >معمل البرج</option>
+                                            <option value="8" >رويال لاب</option>
+                                            <option value="9" >معامل سبيد</option>
+                                            <option value="10" >عزلاب</option>
+                                            <option value="11" >سمارت سكان</option>
+                                            <option value="12" >البرج سكان</option>
+                                            <option value="13" >معمل النيل للاشعة والتحاليل</option>
+                                            <option value="14" >معامل حساب</option>
+                                            <option value="15" >معامل الخلية</option>
+                                            <option value="16" >معامل النورس</option>
+                                            <option value="17" >مركز المجد سكان</option>
+                                            <option value="18" >معامل الشمس</option>
+                                            <option value="19" >فرست لاب</option>
+                                            <option value="20" >مركز ميجا سكان</option>
+                                            <option value="21" >مركز الشروق للاشعة والتحاليل</option>
+                                            <option value="22" >مركزالنيل للاشعة والتحاليل</option>
+                                            <option value="23" >مركز سما سكان</option>
+                                            <option value="24" >معمل الشروق للتحاليل والاشعة</option>
+                                    </select>
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label class="required" for="address_ar">العنوان بالعربي</label>
+                <textarea class="form-control" name="address_ar" id="address_ar" required></textarea>
+                <span class="help-block"> </span>
+              </div>
+            <div class="form-group">
+                <label class="required" for="address_en">العنوان بالانجليزي</label>
+                <textarea class="form-control " name="address_en" id="address_en" required></textarea>
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label for="primary_phone">رقم التلفون الرئيسي</label>
+                <input class="form-control " type="text" name="primary_phone" id="primary_phone" value="">
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label for="secondary_phone">الرقم التلفون اخر</label>
+                <input class="form-control " type="text" name="secondary_phone" id="secondary_phone" value="">
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label for="branch_code">كود الفرع</label>
+                <input class="form-control " type="text" name="branch_code" id="branch_code" value="">
+                                <span class="help-block"> </span>
+            </div>
+            <div class="form-group">
+                <label class="required" for="area_id">منطقه</label>
+                <select class="form-control select2 " name="area_id" id="area_id" required>
+                                            <option value="" selected>الرجاء الإختيار</option>
+                                            <option value="34" >Almarg</option>
+                                            <option value="35" >Al-Mataria</option>
+                                            <option value="36" >Ain Shams</option>
+                                            <option value="37" >Elsalam &#039;awal</option>
+                                            <option value="38" >Elsalam than</option>
+                                            <option value="39" >Elnuzha</option>
+                                            <option value="40" >misr aljadida</option>
+                                            <option value="41" >madinat nasr</option>
+                                            <option value="43" >Al-Waili</option>
+                                            <option value="44" >Bab alshieria</option>
+                                            <option value="45" >wastCairo</option>
+                                            <option value="46" >Musky</option>
+                                            <option value="47" >Azbakeya</option>
+                                            <option value="48" >Abdeen</option>
+                                            <option value="49" >bwlaq</option>
+                                            <option value="50" >gharb</option>
+                                            <option value="51" >munsha&#039;at nasir</option>
+                                            <option value="52" >alzaytun</option>
+                                            <option value="53" >hadayiq alquba</option>
+                                            <option value="54" >alzaawiat alhamra</option>
+                                            <option value="55" >Al-Sharabiya</option>
+                                            <option value="56" >Alsaahil</option>
+                                            <option value="57" >shubra Misr</option>
+                                            <option value="58" >Rawd Farag</option>
+                                            <option value="59" >al&#039;amiria</option>
+                                            <option value="60" >alsayidat zaynab</option>
+                                            <option value="61" >misr alqadima</option>
+                                            <option value="62" >alkhalifa</option>
+                                            <option value="63" >Mokattam</option>
+                                            <option value="64" >albasatin</option>
+                                            <option value="65" >Dar AISalaam</option>
+                                            <option value="66" >Maadi</option>
+                                            <option value="67" >Tora</option>
+                                            <option value="68" >Helwan</option>
+                                            <option value="69" >altabayun</option>
+                                            <option value="70" >May 15</option>
+                                            <option value="71" >Elmaesara</option>
+                                            <option value="72" >Abo Nomros</option>
+                                            <option value="73" >Atfih</option>
+                                            <option value="74" >Awsym</option>
+                                            <option value="75" >Imbaba</option>
+                                            <option value="76" >Badrashin</option>
+                                            <option value="77" >Giza</option>
+                                            <option value="78" >alsaf</option>
+                                            <option value="79" >ElAyat</option>
+                                            <option value="80" >Kerdasa</option>
+                                            <option value="81" >munsha&#039;at alqanatir</option>
+                                            <option value="82" >alwahat albahria</option>
+                                            <option value="83" >Al-Bawiti</option>
+                                            <option value="84" >Hawamdiya</option>
+                                            <option value="85" >6October</option>
+                                            <option value="86" >sheikh Zayed</option>
+                                            <option value="87" >Kafr Tohormos</option>
+                                            <option value="88" >Mendisha</option>
+                                            <option value="89" >Abo Abbas</option>
+                                            <option value="90" >Abo Rawash</option>
+                                            <option value="91" >Eljanayin</option>
+                                            <option value="92" >Ataka</option>
+                                            <option value="93" >Elarbaein</option>
+                                            <option value="94" >Suez</option>
+                                            <option value="95" >Abo Redis</option>
+                                            <option value="96" >Abo Zanimah</option>
+                                            <option value="97" >Nuweiba</option>
+                                            <option value="98" >Dahab</option>
+                                            <option value="99" >Ras Sidr</option>
+                                            <option value="100" >Sharm El-Shaikh</option>
+                                            <option value="101" >Saint Catherine</option>
+                                            <option value="102" >Mount Sinai</option>
+                                            <option value="103" >Sohag</option>
+                                            <option value="104" >Akhmim</option>
+                                            <option value="105" >ُElblina</option>
+                                            <option value="106" >Maragha</option>
+                                            <option value="107" >El munsha&#039;a</option>
+                                            <option value="108" >Dar AISalaam - Sohag</option>
+                                            <option value="109" >markaz jirja</option>
+                                            <option value="110" >Juhayna</option>
+                                            <option value="111" >saqalatuh</option>
+                                            <option value="112" >tama</option>
+                                            <option value="113" >tahta</option>
+                                            <option value="114" >Aseerat</option>
+                                            <option value="115" >Elghardaqatu</option>
+                                            <option value="116" >Ras Gharib</option>
+                                            <option value="117" >Elqasayr</option>
+                                            <option value="118" >Safaga</option>
+                                            <option value="119" >Marsa Alam</option>
+                                            <option value="120" >Berenice</option>
+                                            <option value="121" >Shalatin</option>
+                                            <option value="122" >Halayeb city</option>
+                                            <option value="123" >Abo tishit</option>
+                                            <option value="124" >Farshout</option>
+                                            <option value="125" >Nag Hammadi</option>
+                                            <option value="126" >Elwaqf</option>
+                                            <option value="127" >Dishana</option>
+                                            <option value="128" >Qena</option>
+                                            <option value="129" >qift</option>
+                                            <option value="130" >Qus</option>
+                                            <option value="131" >Nuqada</option>
+                                            <option value="132" >Banha</option>
+                                            <option value="133" >Qalyub</option>
+                                            <option value="134" >Al-Qanater Charity</option>
+                                            <option value="135" >Shubra Al Khaimah</option>
+                                            <option value="136" >Khanka</option>
+                                            <option value="137" >Kafr Shokr</option>
+                                            <option value="138" >Shibin Elqanatir</option>
+                                            <option value="139" >Toukh</option>
+                                            <option value="140" >Eleubur</option>
+                                            <option value="141" >Qaha</option>
+                                            <option value="142" >Elkhusus</option>
+                                            <option value="143" >Hayu Alsharq</option>
+                                            <option value="144" >Port Fouad</option>
+                                            <option value="145" >Hay Mobarak</option>
+                                            <option value="146" >Al-Mansheya</option>
+                                            <option value="147" >Hayu Aljulf</option>
+                                            <option value="148" >Al-Ruswa</option>
+                                            <option value="149" >Hayu Almunakh</option>
+                                            <option value="150" >Hay Alzuhur</option>
+                                            <option value="151" >Hay Port Said</option>
+                                            <option value="152" >Althalathinii</option>
+                                            <option value="153" >ِAljumhuria</option>
+                                            <option value="154" >ِAl arab</option>
+                                            <option value="155" >Al hora</option>
+                                            <option value="156" >Hay Al afranj</option>
+                                            <option value="157" >Alsinaeia</option>
+                                            <option value="158" >Almonasara</option>
+                                            <option value="159" >Hay Aldawahi</option>
+                                            <option value="160" >Bor Tawfiq</option>
+                                            <option value="161" >Hay Alkuayt</option>
+                                            <option value="162" >Sharq Altafriea</option>
+                                            <option value="174" >Alaqsr</option>
+                                            <option value="175" >AlZinnia</option>
+                                            <option value="176" >Al qurna</option>
+                                            <option value="177" >Al Bayadiya</option>
+                                            <option value="178" >Al tuwd</option>
+                                            <option value="179" >Armant</option>
+                                            <option value="180" >Esna</option>
+                                            <option value="181" >Kafr El-Sheikh</option>
+                                            <option value="182" >Desouk</option>
+                                            <option value="183" >Foh</option>
+                                            <option value="184" >Metobas</option>
+                                            <option value="185" >Baltim</option>
+                                            <option value="186" >Masif Baltim</option>
+                                            <option value="187" >ِِAlhamul</option>
+                                            <option value="188" >Bella</option>
+                                            <option value="189" >Riyadh</option>
+                                            <option value="191" >sayidi salim</option>
+                                            <option value="192" >qallyn</option>
+                                            <option value="193" >Sidi Ghazi</option>
+                                            <option value="195" >Burg Albarlis</option>
+                                            <option value="196" >misir</option>
+                                            <option value="197" >Ismailia</option>
+                                            <option value="198" >Altal Alkabir</option>
+                                            <option value="199" >Fayed</option>
+                                            <option value="200" >Alqantarat sharq</option>
+                                            <option value="202" >Alqasaasayn</option>
+                                            <option value="203" >Damietta</option>
+                                            <option value="204" >Ras Albar‏</option>
+                                            <option value="205" >Alzarqa‏</option>
+                                            <option value="206" >Ezbet El Burj</option>
+                                            <option value="207" >Kafr Saad</option>
+                                            <option value="208" >Faraskur</option>
+                                            <option value="209" >mit &#039;abo ghalb‏</option>
+                                            <option value="210" >Damyat aljadida</option>
+                                            <option value="211" >Rawda (Damietta)</option>
+                                            <option value="212" >Al-Saro (Damietta)</option>
+                                            <option value="213" >kafar albatiykh</option>
+                                            <option value="214" >Bani Sweif</option>
+                                            <option value="215" >Nasser City</option>
+                                            <option value="216" >Al Fashn</option>
+                                            <option value="217" >Baba</option>
+                                            <option value="218" >Ahnasia</option>
+                                            <option value="219" >Alwastaa</option>
+                                            <option value="220" >Samasta</option>
+                                            <option value="221" >Asyut</option>
+                                            <option value="222" >Dayrut</option>
+                                            <option value="223" >Qusia</option>
+                                            <option value="224" >Ibnob</option>
+                                            <option value="225" >Manfalut</option>
+                                            <option value="226" >Abo Tig</option>
+                                            <option value="227" >Alghanayim</option>
+                                            <option value="228" >sahil salim</option>
+                                            <option value="229" >Badari</option>
+                                            <option value="230" >sudfan</option>
+                                            <option value="231" >Alfath</option>
+                                            <option value="232" >Aswan</option>
+                                            <option value="233" >Kalabsha</option>
+                                            <option value="234" >Al-Radisia</option>
+                                            <option value="235" >Alsubaeia</option>
+                                            <option value="236" >Albasilia</option>
+                                            <option value="237" >Abo Simbel</option>
+                                            <option value="238" >NusratAlnuwba</option>
+                                            <option value="239" >Kom Ombo</option>
+                                            <option value="240" >Draw</option>
+                                            <option value="241" >Smouha</option>
+                                            <option value="242" >Abrahamic</option>
+                                            <option value="243" >Sidi Gaber</option>
+                                            <option value="244" >Miami</option>
+                                            <option value="245" >Bulkley</option>
+                                            <option value="246" >alsuywf</option>
+                                            <option value="247" >Janaklis</option>
+                                            <option value="248" >alsuywf alshamaaea</option>
+                                            <option value="249" >Hadra Bahri</option>
+                                            <option value="250" >Saba Pasha</option>
+                                            <option value="251" >Asafra Bahri</option>
+                                            <option value="252" >Abo Youssef</option>
+                                            <option value="253" >Al-Shattabi</option>
+                                            <option value="254" >ghit aleanab</option>
+                                            <option value="255" >almaemurat albalad</option>
+                                            <option value="256" >Mandara</option>
+                                            <option value="257" >Anfushi</option>
+                                            <option value="258" >Burj Al Arab Aljadida</option>
+                                            <option value="259" >Al-Tabiya</option>
+                                            <option value="260" >Burj Al Arab</option>
+                                            <option value="261" >kom Aldika</option>
+                                            <option value="262" >Hajar Alnawatih</option>
+                                            <option value="263" >Alshalaalat</option>
+                                            <option value="264" >ghirbal</option>
+                                            <option value="265" >Abo Hammad</option>
+                                            <option value="266" >Abo Kabir</option>
+                                            <option value="267" >Awlad Saqr</option>
+                                            <option value="268" >Belbeis</option>
+                                            <option value="269" >Al-Husseiniyah</option>
+                                            <option value="270" >Derb Najm</option>
+                                            <option value="271" >Al -Zigzag</option>
+                                            <option value="272" >Al-Salihiya</option>
+                                            <option value="273" >Aleashir of Ramadan</option>
+                                            <option value="274" >Faqous</option>
+                                            <option value="275" >Kafr Saqr</option>
+                                            <option value="276" >Minya Alkamh</option>
+                                            <option value="277" >Hahyana</option>
+                                            <option value="278" >Mash Toul Alsuwq</option>
+                                            <option value="279" >Abrahamic</option>
+                                            <option value="280" >Alqarin</option>
+                                            <option value="281" >Alqanayat</option>
+                                            <option value="282" >Ashmoun</option>
+                                            <option value="283" >Al-Bajur</option>
+                                            <option value="284" >Barakat Al-Sabaa</option>
+                                            <option value="285" >Menouf</option>
+                                            <option value="286" >Sadat City</option>
+                                            <option value="287" >Sars Al-Lyan</option>
+                                            <option value="288" >Tala</option>
+                                            <option value="289" >Al shohada</option>
+                                            <option value="290" >Shbeen El Koom</option>
+                                            <option value="291" >quisuna</option>
+                                            <option value="292" >Abo Qurqas</option>
+                                            <option value="293" >Bani Mazar</option>
+                                            <option value="294" >Deir Mawas</option>
+                                            <option value="295" >Smalut</option>
+                                            <option value="296" >Aleudwa</option>
+                                            <option value="297" >Mattai</option>
+                                            <option value="298" >Maghagha</option>
+                                            <option value="299" >milwi</option>
+                                            <option value="300" >Minya</option>
+                                            <option value="301" >New Minya</option>
+                                            <option value="302" >Mahalla al-Kubra Alhayu alawl</option>
+                                            <option value="303" >Mahalla al-Kubra</option>
+                                            <option value="304" >Tantan -Hayu_awal</option>
+                                            <option value="305" >Tantan - Hayun thani</option>
+                                            <option value="306" >Samannoud</option>
+                                            <option value="307" >Qatour</option>
+                                            <option value="308" >Alsunta</option>
+                                            <option value="309" >zaftaa</option>
+                                            <option value="310" >Basyoun</option>
+                                            <option value="311" >Kafr El Zayat</option>
+                                            <option value="312" >qahafa</option>
+                                            <option value="313" >Al Hadiqa</option>
+                                            <option value="314" >Kaiman Fares</option>
+                                            <option value="315" >AL Sofi</option>
+                                            <option value="316" >Al Hawatim</option>
+                                            <option value="318" >lotf Allah</option>
+                                            <option value="319" >Baghous</option>
+                                            <option value="320" >Dar Alramad</option>
+                                            <option value="321" >Mansoura</option>
+                                            <option value="322" >Al_Manzila</option>
+                                            <option value="323" >ljamalia</option>
+                                            <option value="324" >Al Gamalia</option>
+                                            <option value="325" >Dekernes</option>
+                                            <option value="326" >minyat alnasr</option>
+                                            <option value="328" >mit salsil</option>
+                                            <option value="329" >mayt ghamar</option>
+                                            <option value="330" >Aja</option>
+                                            <option value="331" >Rashid</option>
+                                            <option value="332" >Shubrakhit</option>
+                                            <option value="333" >aytay albarud</option>
+                                            <option value="334" >Abo Homs</option>
+                                            <option value="335" >Kafr El Dawar</option>
+                                            <option value="336" >Al Dilnajat</option>
+                                            <option value="337" >Kom Hamada</option>
+                                            <option value="338" >Housh Issa</option>
+                                            <option value="339" >Damanhour</option>
+                                            <option value="340" >Mahmoudiya</option>
+                                            <option value="341" >Edco</option>
+                                            <option value="342" >Abo Al-Matamir</option>
+                                            <option value="343" >ALRahmaniyah</option>
+                                            <option value="344" >Nubaria  Aljadida</option>
+                                            <option value="345" >wadi alnutrun</option>
+                                            <option value="346" >AL Dakhla</option>
+                                            <option value="347" >Al kharija</option>
+                                            <option value="348" >Farafra</option>
+                                            <option value="349" >markaz baris</option>
+                                            <option value="350" >AL  Salloum</option>
+                                            <option value="352" >sayidi Barani</option>
+                                            <option value="353" >Al najyla</option>
+                                            <option value="354" >Marsa Matrouh</option>
+                                            <option value="355" >Al Dubaea</option>
+                                            <option value="356" >Alamein</option>
+                                            <option value="357" >Al Hamam</option>
+                                            <option value="358" >Siwa</option>
+                                            <option value="360" >The Pyramid gardens</option>
+                                            <option value="361" >Maadi Gardens</option>
+                                            <option value="362" >Warraq</option>
+                                            <option value="363" >Tirsa</option>
+                                            <option value="364" >ShabraMant</option>
+                                            <option value="365" >Saqeel</option>
+                                            <option value="366" >Saqara</option>
+                                            <option value="367" >sakiat Mekki</option>
+                                            <option value="368" >Omraneya</option>
+                                            <option value="369" >Nahai </option>
+                                            <option value="370" >Mohandessin</option>
+                                            <option value="371" >Mansoureya</option>
+                                            <option value="372" >Manial Shiha</option>
+                                            <option value="373" >Kit Kat</option>
+                                            <option value="374" >Haram</option>
+                                            <option value="375" >Saft El Laban</option>
+                                            <option value="376" >Boulak El Dakroor</option>
+                                            <option value="377" >Al Monib</option>
+                                            <option value="378" >Faisal</option>
+                                            <option value="379" >El Manawat</option>
+                                            <option value="380" >Dokki</option>
+                                            <option value="381" >Al Saf</option>
+                                            <option value="382" >Al Nobariah</option>
+                                            <option value="383" >Al Manashi</option>
+                                            <option value="384" >AL Kom Al Ahmer</option>
+                                            <option value="385" >Al Barageel</option>
+                                            <option value="386" >Agouza</option>
+                                            <option value="387" >Abu Al-Nomros</option>
+                                            <option value="388" >AL Kom Al Ahmer</option>
+                                            <option value="389" >Al Barageel</option>
+                                            <option value="390" >Agouza</option>
+                                            <option value="391" >Zamalek</option>
+                                            <option value="392" >Abu Al-Nomros</option>
+                                            <option value="393" >Qaha</option>
+                                            <option value="394" >Meet Nama</option>
+                                            <option value="395" >El-Qalag</option>
+                                            <option value="396" >El-Khsos</option>
+                                            <option value="398" >Bahtim</option>
+                                            <option value="399" >Al Khanka</option>
+                                            <option value="400" >Abuzaabal</option>
+                                            <option value="401" >Moustorod</option>
+                                            <option value="402" >Sayeda Naffisa</option>
+                                            <option value="403" >New El-Marg</option>
+                                            <option value="404" >New Cairo</option>
+                                            <option value="405" >Mirage City</option>
+                                            <option value="406" >Arabella</option>
+                                            <option value="407" >5th Settlement</option>
+                                            <option value="408" >3rd Settlement</option>
+                                            <option value="409" >1st Settlement</option>
+                                            <option value="410" >Zahraa Nasr City</option>
+                                            <option value="412" >Zahraa Masr El Kadima</option>
+                                            <option value="413" >Manial Al Rodah</option>
+                                            <option value="414" >El Manial</option>
+                                            <option value="415" >Madinty</option>
+                                            <option value="416" >Katamiah</option>
+                                            <option value="417" >Helwan-El Shams City</option>
+                                            <option value="418" >Helwan-El Moazafen City</option>
+                                            <option value="419" >Helwan-Atlas</option>
+                                            <option value="420" >Helwan-15th of May City</option>
+                                            <option value="421" >Helmiet Elzaitoun</option>
+                                            <option value="422" >Helmeya</option>
+                                            <option value="423" >Heliopolis</option>
+                                            <option value="424" >Hadayek Helwan</option>
+                                            <option value="425" >Gesr Al Suez</option>
+                                            <option value="426" >Ezbt Elhagana</option>
+                                            <option value="427" >Ezbat El-Nakhl</option>
+                                            <option value="428" >Elsayeda Aisha</option>
+                                            <option value="429" >El Tahrir</option>
+                                            <option value="430" >El Shorouk </option>
+                                            <option value="431" >Badr City</option>
+                                            <option value="432" >Al Sawah</option>
+                                            <option value="433" >Al Salam City</option>
+                                            <option value="434" >Al Rehab </option>
+                                            <option value="435" >Tura-Elbalad</option>
+                                            <option value="436" >El Khalafawy</option>
+                                            <option value="437" >Zezenya</option>
+                                            <option value="438" >Stanly</option>
+                                            <option value="439" >Sedi Kreir</option>
+                                            <option value="440" >San Stefano</option>
+                                            <option value="441" >Roshdy</option>
+                                            <option value="442" >North Coast</option>
+                                            <option value="443" >Muntazah</option>
+                                            <option value="444" >Manshia</option>
+                                            <option value="445" >Mahtet El-Raml</option>
+                                            <option value="446" >Maamora</option>
+                                            <option value="447" >Luran</option>
+                                            <option value="448" >Khorshid</option>
+                                            <option value="449" >Kafer Abdou</option>
+                                            <option value="450" >Glem</option>
+                                            <option value="451" >El-Agamy</option>
+                                            <option value="452" >El Borg El Kadem</option>
+                                            <option value="453" >City Center</option>
+                                            <option value="454" >Bangar EL Sokar</option>
+                                            <option value="455" >Azarita</option>
+                                            <option value="456" >Awaied-Ras Souda</option>
+                                            <option value="457" >Asafra</option>
+                                            <option value="458" >Alexandria</option>
+                                            <option value="459" >Al Nahda- Al Amria</option>
+                                            <option value="460" >Al Bitash</option>
+                                            <option value="461" >Al A&#039;mriah</option>
+                                            <option value="462" >Abu Keer</option>
+                                            <option value="463" >Abees</option>
+                                            <option value="464" >Bashtil</option>
+                                            <option value="465" >ard alewaa</option>
+                                            <option value="466" >The Great Sea</option>
+                                            <option value="467" >Helwan</option>
+                                            <option value="468" >Sinurs</option>
+                                            <option value="469" >Aldaaher</option>
+                                            <option value="470" >Al-Qasr Al-Aini</option>
+                                            <option value="471" >Bab Al-Luq</option>
+                                            <option value="472" >Aga Khan</option>
+                                            <option value="473" >aldemrdash</option>
+                                            <option value="474" >anbe</option>
+                                            <option value="475" >sheraton</option>
+                                            <option value="476" >alfayom</option>
+                                            <option value="477" >abshoay</option>
+                                            <option value="478" >shrbeen</option>
+                                            <option value="479" >talka</option>
+                                            <option value="480" >belkass</option>
+                                            <option value="481" >almansora algededa</option>
+                                            <option value="482" >alsemblaween</option>
+                                            <option value="483" >abo keber</option>
+                                            <option value="484" >sede beshr</option>
+                                            <option value="485" >Sporting</option>
+                                            <option value="486" >Muharram Bey</option>
+                                            <option value="488" >Amiriyah</option>
+                                            <option value="489" >mostakpal city</option>
+                                            <option value="490" >Alqantarat Gharp</option>
+                                            <option value="491" >Abbasya</option>
+                                            <option value="492" >Al Darrassa</option>
+                                            <option value="493" >Sumusta</option>
+                                            <option value="494" >Beni Suef Quesm</option>
+                                            <option value="496" >Al Areesh</option>
+                                    </select>
+                                <span class="help-block"> </span>
+            </div>
+           
+            <div id="latlng">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="lat">خط العرض</label>
+                        <input class="form-control" type="text" name="lat" id="lat" value="" />
+                        <span class="help-block"> </span>
+                    </div>  
+                    <div class="form-group col-md-6">
+                        <label for="lng">خط الطول</label>
+                        <input class="form-control" type="text" name="lng" id="lng" value="" />
+                        <span class="help-block"> </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- مربع البحث والخريطة -->
+
+             
+                <div class="form-group">
+                <input id="pac-input" class="form-control" type="text" placeholder="Search.." />
+            </div>
+       
+           
+            <div id="map-container" class="mb-4">
+                <div id="map" style="height: 400px;"></div>
+            </div>      
+            
+            <div class="form-group">
+                <label class="required" for="email">البريد الالكتروني</label>
+                <input class="form-control" type="text" name="email" id="email" value="" required />
+                <span class="help-block"> </span>
+            </div>
+            
+            <div class="form-group">
+                <button class="btn btn-danger" type="submit">
+                    حفظ
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+            </section>
+            <!-- /.content -->
+        </div>
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b><a href="https://paymac.net"> Paymac.net </a></b>
+            </div>
+            <strong> &copy;</strong> كافة الحقوق محفوظة
+        </footer>
+        <form id="logoutform" action="https://dev.refine-care.com/logout" method="POST" style="display: none;">
+            <input type="hidden" name="_token" value="K96CIXHJWU0fcf9hu0pPV0dQVx5FjXb0LaQ6fK48" autocomplete="off">
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.0/js/dataTables.select.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        $(function() {
+  let copyButtonTrans = 'نسخ'
+  let csvButtonTrans = 'CSV'
+  let excelButtonTrans = 'إكسل'
+  let pdfButtonTrans = 'PDF'
+  let printButtonTrans = 'طباعة'
+  let colvisButtonTrans = 'الاعمدة'
+  let selectAllButtonTrans = 'تحديد الكل'
+  let selectNoneButtonTrans = 'عدم تحديد الكل'
+
+  let languages = {
+    'ar': 'https://cdn.datatables.net/plug-ins/1.10.19/i18n/Arabic.json',
+        'en': 'https://cdn.datatables.net/plug-ins/1.10.19/i18n/English.json'
+  };
+
+  $.extend(true, $.fn.dataTable.Buttons.defaults.dom.button, { className: 'btn' })
+  $.extend(true, $.fn.dataTable.defaults, {
+    language: {
+      url: languages['ar']
+    },
+    columnDefs: [{
+        orderable: false,
+        className: 'select-checkbox',
+        targets: 0
+    }, {
+        orderable: false,
+        searchable: false,
+        targets: -1
+    }],
+    select: {
+      style:    'multi+shift',
+      selector: 'td:first-child'
+    },
+    order: [],
+    scrollX: true,
+    pageLength: 100,
+    dom: 'lBfrtip<"actions">',
+    buttons: [
+      {
+        extend: 'selectAll',
+        className: 'btn-primary',
+        text: selectAllButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        },
+        action: function(e, dt) {
+          e.preventDefault()
+          dt.rows().deselect();
+          dt.rows({ search: 'applied' }).select();
+        }
+      },
+      {
+        extend: 'selectNone',
+        className: 'btn-primary',
+        text: selectNoneButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      },
+      {
+        extend: 'copy',
+        className: 'btn-default',
+        text: copyButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      },
+      {
+        extend: 'csv',
+        className: 'btn-default',
+        text: csvButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      },
+      {
+        extend: 'excel',
+        className: 'btn-default',
+        text: excelButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      },
+      {
+        extend: 'pdf',
+        className: 'btn-default',
+        text: pdfButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      },
+      {
+        extend: 'print',
+        className: 'btn-default',
+        text: printButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      },
+      {
+        extend: 'colvis',
+        className: 'btn-default',
+        text: colvisButtonTrans,
+        exportOptions: {
+          columns: ':visible'
+        }
+      }
+    ]
+  });
+
+  $.fn.dataTable.ext.classes.sPageButton = '';
+});
+
+    </script>
+    <script>
+        /*!
+     * AdminLTE v3.0.0-alpha.2 (https://adminlte.io)
+     * Copyright 2014-2018 Abdullah Almsaeed <abdullah@almsaeedstudio.com>
+     * Licensed under MIT (https://github.com/almasaeed2010/AdminLTE/blob/master/LICENSE)
+     */
+    !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t(e.adminlte={})}(this,function(e){"use strict";var i,t,o,n,r,a,s,c,f,l,u,d,h,p,_,g,y,m,v,C,D,E,A,O,w,b,L,S,j,T,I,Q,R,P,x,B,M,k,H,N,Y,U,V,G,W,X,z,F,q,J,K,Z,$,ee,te,ne="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},ie=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},oe=(i=jQuery,t="ControlSidebar",o="lte.control.sidebar",n=i.fn[t],r=".control-sidebar",a='[data-widget="control-sidebar"]',s=".main-header",c="control-sidebar-open",f="control-sidebar-slide-open",l={slide:!0},u=function(){function n(e,t){ie(this,n),this._element=e,this._config=this._getConfig(t)}return n.prototype.show=function(){this._config.slide?i("body").removeClass(f):i("body").removeClass(c)},n.prototype.collapse=function(){this._config.slide?i("body").addClass(f):i("body").addClass(c)},n.prototype.toggle=function(){this._setMargin(),i("body").hasClass(c)||i("body").hasClass(f)?this.show():this.collapse()},n.prototype._getConfig=function(e){return i.extend({},l,e)},n.prototype._setMargin=function(){i(r).css({top:i(s).outerHeight()})},n._jQueryInterface=function(t){return this.each(function(){var e=i(this).data(o);if(e||(e=new n(this,i(this).data()),i(this).data(o,e)),"undefined"===e[t])throw new Error(t+" is not a function");e[t]()})},n}(),i(document).on("click",a,function(e){e.preventDefault(),u._jQueryInterface.call(i(this),"toggle")}),i.fn[t]=u._jQueryInterface,i.fn[t].Constructor=u,i.fn[t].noConflict=function(){return i.fn[t]=n,u._jQueryInterface},u),re=(d=jQuery,h="Layout",p="lte.layout",_=d.fn[h],g=".main-sidebar",y=".main-header",m=".content-wrapper",v=".main-footer",C="hold-transition",D=function(){function n(e){ie(this,n),this._element=e,this._init()}return n.prototype.fixLayoutHeight=function(){var e={window:d(window).height(),header:d(y).outerHeight(),footer:d(v).outerHeight(),sidebar:d(g).height()},t=this._max(e);d(m).css("min-height",e.window-e.header-e.footer),d(g).css("min-height",e.window-e.header)},n.prototype._init=function(){var e=this;d("body").removeClass(C),this.fixLayoutHeight(),d(g).on("collapsed.lte.treeview expanded.lte.treeview collapsed.lte.pushmenu expanded.lte.pushmenu",function(){e.fixLayoutHeight()}),d(window).resize(function(){e.fixLayoutHeight()}),d("body, html").css("height","auto")},n.prototype._max=function(t){var n=0;return Object.keys(t).forEach(function(e){t[e]>n&&(n=t[e])}),n},n._jQueryInterface=function(t){return this.each(function(){var e=d(this).data(p);e||(e=new n(this),d(this).data(p,e)),t&&e[t]()})},n}(),d(window).on("load",function(){D._jQueryInterface.call(d("body"))}),d.fn[h]=D._jQueryInterface,d.fn[h].Constructor=D,d.fn[h].noConflict=function(){return d.fn[h]=_,D._jQueryInterface},D),ae=(E=jQuery,A="PushMenu",w="."+(O="lte.pushmenu"),b=E.fn[A],L={COLLAPSED:"collapsed"+w,SHOWN:"shown"+w},S={screenCollapseSize:768},j={TOGGLE_BUTTON:'[data-widget="pushmenu"]',SIDEBAR_MINI:".sidebar-mini",SIDEBAR_COLLAPSED:".sidebar-collapse",BODY:"body",OVERLAY:"#sidebar-overlay",WRAPPER:".wrapper"},T="sidebar-collapse",I="sidebar-open",Q=function(){function n(e,t){ie(this,n),this._element=e,this._options=E.extend({},S,t),E(j.OVERLAY).length||this._addOverlay()}return n.prototype.show=function(){E(j.BODY).addClass(I).removeClass(T);var e=E.Event(L.SHOWN);E(this._element).trigger(e)},n.prototype.collapse=function(){E(j.BODY).removeClass(I).addClass(T);var e=E.Event(L.COLLAPSED);E(this._element).trigger(e)},n.prototype.toggle=function(){(E(window).width()>=this._options.screenCollapseSize?!E(j.BODY).hasClass(T):E(j.BODY).hasClass(I))?this.collapse():this.show()},n.prototype._addOverlay=function(){var e=this,t=E("<div />",{id:"sidebar-overlay"});t.on("click",function(){e.collapse()}),E(j.WRAPPER).append(t)},n._jQueryInterface=function(t){return this.each(function(){var e=E(this).data(O);e||(e=new n(this),E(this).data(O,e)),t&&e[t]()})},n}(),E(document).on("click",j.TOGGLE_BUTTON,function(e){e.preventDefault();var t=e.currentTarget;"pushmenu"!==E(t).data("widget")&&(t=E(t).closest(j.TOGGLE_BUTTON)),Q._jQueryInterface.call(E(t),"toggle")}),E.fn[A]=Q._jQueryInterface,E.fn[A].Constructor=Q,E.fn[A].noConflict=function(){return E.fn[A]=b,Q._jQueryInterface},Q),se=(R=jQuery,P="Treeview",B="."+(x="lte.treeview"),M=R.fn[P],k={SELECTED:"selected"+B,EXPANDED:"expanded"+B,COLLAPSED:"collapsed"+B,LOAD_DATA_API:"load"+B},H=".nav-item",N=".nav-treeview",Y=".menu-open",V="menu-open",G={trigger:(U='[data-widget="treeview"]')+" "+".nav-link",animationSpeed:300,accordion:!0},W=function(){function i(e,t){ie(this,i),this._config=t,this._element=e}return i.prototype.init=function(){this._setupListeners()},i.prototype.expand=function(e,t){var n=this,i=R.Event(k.EXPANDED);if(this._config.accordion){var o=t.siblings(Y).first(),r=o.find(N).first();this.collapse(r,o)}e.slideDown(this._config.animationSpeed,function(){t.addClass(V),R(n._element).trigger(i)})},i.prototype.collapse=function(e,t){var n=this,i=R.Event(k.COLLAPSED);e.slideUp(this._config.animationSpeed,function(){t.removeClass(V),R(n._element).trigger(i),e.find(Y+" > "+N).slideUp(),e.find(Y).removeClass(V)})},i.prototype.toggle=function(e){var t=R(e.currentTarget),n=t.next();if(n.is(N)){e.preventDefault();var i=t.parents(H).first();i.hasClass(V)?this.collapse(R(n),i):this.expand(R(n),i)}},i.prototype._setupListeners=function(){var t=this;R(document).on("click",this._config.trigger,function(e){t.toggle(e)})},i._jQueryInterface=function(n){return this.each(function(){var e=R(this).data(x),t=R.extend({},G,R(this).data());e||(e=new i(R(this),t),R(this).data(x,e)),"init"===n&&e[n]()})},i}(),R(window).on(k.LOAD_DATA_API,function(){R(U).each(function(){W._jQueryInterface.call(R(this),"init")})}),R.fn[P]=W._jQueryInterface,R.fn[P].Constructor=W,R.fn[P].noConflict=function(){return R.fn[P]=M,W._jQueryInterface},W),ce=(X=jQuery,z="Widget",q="."+(F="lte.widget"),J=X.fn[z],K={EXPANDED:"expanded"+q,COLLAPSED:"collapsed"+q,REMOVED:"removed"+q},$="collapsed-card",ee={animationSpeed:"normal",collapseTrigger:(Z={DATA_REMOVE:'[data-widget="remove"]',DATA_COLLAPSE:'[data-widget="collapse"]',CARD:".card",CARD_HEADER:".card-header",CARD_BODY:".card-body",CARD_FOOTER:".card-footer",COLLAPSED:".collapsed-card"}).DATA_COLLAPSE,removeTrigger:Z.DATA_REMOVE},te=function(){function n(e,t){ie(this,n),this._element=e,this._parent=e.parents(Z.CARD).first(),this._settings=X.extend({},ee,t)}return n.prototype.collapse=function(){var e=this;this._parent.children(Z.CARD_BODY+", "+Z.CARD_FOOTER).slideUp(this._settings.animationSpeed,function(){e._parent.addClass($)});var t=X.Event(K.COLLAPSED);this._element.trigger(t,this._parent)},n.prototype.expand=function(){var e=this;this._parent.children(Z.CARD_BODY+", "+Z.CARD_FOOTER).slideDown(this._settings.animationSpeed,function(){e._parent.removeClass($)});var t=X.Event(K.EXPANDED);this._element.trigger(t,this._parent)},n.prototype.remove=function(){this._parent.slideUp();var e=X.Event(K.REMOVED);this._element.trigger(e,this._parent)},n.prototype.toggle=function(){this._parent.hasClass($)?this.expand():this.collapse()},n.prototype._init=function(e){var t=this;this._parent=e,X(this).find(this._settings.collapseTrigger).click(function(){t.toggle()}),X(this).find(this._settings.removeTrigger).click(function(){t.remove()})},n._jQueryInterface=function(t){return this.each(function(){var e=X(this).data(F);e||(e=new n(X(this),e),X(this).data(F,"string"==typeof t?e:t)),"string"==typeof t&&t.match(/remove|toggle/)?e[t]():"object"===("undefined"==typeof t?"undefined":ne(t))&&e._init(X(this))})},n}(),X(document).on("click",Z.DATA_COLLAPSE,function(e){e&&e.preventDefault(),te._jQueryInterface.call(X(this),"toggle")}),X(document).on("click",Z.DATA_REMOVE,function(e){e&&e.preventDefault(),te._jQueryInterface.call(X(this),"remove")}),X.fn[z]=te._jQueryInterface,X.fn[z].Constructor=te,X.fn[z].noConflict=function(){return X.fn[z]=J,te._jQueryInterface},te);e.ControlSidebar=oe,e.Layout=re,e.PushMenu=ae,e.Treeview=se,e.Widget=ce,Object.defineProperty(e,"__esModule",{value:!0})});
+    //# sourceMappingURL=adminlte.min.js.map
+
+    </script>
+    <script src="index.js" defer></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiHXEeByxxXnriRpYTxopcp0CL6vlCnwg&libraries=places&callback=initMap">
+  </script>
+  
+    </body>
+
+</html>
